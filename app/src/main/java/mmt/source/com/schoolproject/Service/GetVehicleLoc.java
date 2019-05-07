@@ -22,7 +22,6 @@ import mmt.source.com.schoolproject.model.SvTrack;
 public class GetVehicleLoc extends AsyncTask<String, Void, Integer> {
 
     SvTrack svt_inst = SvTrack.getInstance();
-
     @Override
     protected Integer doInBackground(String... params) {
         Integer result = 0;
