@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Signup_new">
+
+    <RelativeLayout
+        android:id="@+id/ccplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/kbs"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:layout_marginTop="25dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="to King's Family"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@+id/ll"
+            android:src="@drawable/bnr"/>
+
+
+        <LinearLayout
+            android:id="@+id/pick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/phone"
+                    style="@style/Widget.Shrine.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textSize="14sp"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/contactNo"
+                    style="@style/Widget.Shrine.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/processBar"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Sign Up"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_below="@+id/pick"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="continue"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/kingscolor"
+            android:background="#000"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

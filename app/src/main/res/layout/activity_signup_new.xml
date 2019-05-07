@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Signup_new">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ccplayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/logo3"/>
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center"
+                    android:text="Please enter your mobile number to explore"
+                    android:layout_below="@+id/image1"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Signin as"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_below="@+id/txt1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="phone number"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/radioGroup"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/txt2"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Parent" />
+
+                    <RadioButton
+                        android:id="@+id/radioSpanish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Driver" />
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="continue"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/et_phone"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/kingscolor"
+                    android:background="#000"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

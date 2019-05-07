@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/bus2"/>
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/selectspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/spinnerhint"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            app:met_floatingLabel="highlight" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameId"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/contactNo"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number/UserId">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/contactNo_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailId"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/emailId_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/addressId"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/address_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="textPostalAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/et_passw"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/processBar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/regBtn"
+                style="@style/Widget.Shrine.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/poorich"
+                android:textAllCaps="false"
+                android:text="Register" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/regBtn"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:text="OTP Verification Submitted"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/singinId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textAlignment="center"
+                android:fontFamily="@font/poorich"
+                android:textSize="20sp"
+                android:layout_marginTop="10sp"
+                android:textColor="#000"
+                android:layout_alignParentBottom="true">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

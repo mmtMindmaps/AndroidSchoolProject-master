@@ -1,0 +1,159 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_marginTop="60dp"
+        android:paddingTop="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/kidnameId"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/kid_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/radiogrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/male"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dobId"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DOB">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/dob_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="date" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/standardId"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Standard">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/standard_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/areaId"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Area">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/area_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pincodeId"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pincode">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/pincode_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/kidaddressId"
+            style="@style/Widget.Shrine.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/kidaddress_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="textPostalAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/processBar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/submitBtn"
+                style="@style/Widget.Shrine.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/poorich"
+                android:textAllCaps="false"
+                android:text="Submit" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+    <FrameLayout
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true">
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

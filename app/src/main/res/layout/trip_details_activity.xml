@@ -1,0 +1,150 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_marginTop="60dp"
+            android:paddingTop="16dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/studentnameId"
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student Name">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/student_name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    android:focusable="false"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/routeNoId"
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Route Number">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/routeno_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/pickuptimeId"
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pickup Time">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/pickuptime_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:focusable="false"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/droptimeId"
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drop Time">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/droptime_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:focusable="false"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/drivernameId"
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Driver Name">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/drivername_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/driver_contactno_Id"
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Driver Contact Number">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/driver_contact_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_phone"
+                    android:inputType="textPostalAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/vehicalnoId"
+                style="@style/Widget.Shrine.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vehical Number">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/vehical_no_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="textPostalAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mmt.source.com.schoolproject">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kbs1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/kbs1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Shrine">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DashBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyKidDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TripDetialsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Login_mobile"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Signup_new"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Otp_Activity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".KidSearchActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".MapActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".CameraActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".MapsActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
